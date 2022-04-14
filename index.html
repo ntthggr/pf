@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<title>PF v0.1</title>
 </head>
-<body>
+<body">
 	<header class="header" id="header">
 		<nav class="nav container">
 		  <a href="" class="nav__logo">ntthggr</a>
@@ -56,7 +58,7 @@
 		<section class="home section" id="home">
 
 			<div class="div home__container container grid">
-				<div class="home__data">
+				<div class="home__data load-hidden">
 					<span class="home__greeting">Привет</span>
 					<h1 class="home__name">Я ntthggr</h1>
 					<h3 class="home__education">Начинающий вэб разработчик</h3>
@@ -65,22 +67,22 @@
 						<a href="#about" class="button">Обо мне</a>
 					</div>
 				</div>
-				<div class="div home__handle">
+				<div class="div home__handle load-hidden">
 					<img src="img/me.png" alt="" class="home__img">
 				</div>
-				<div class="div home__social">
+				<div class="div home__social load-hidden">
 					<a href="" target="_blank" class="home__social-link"><i class='bx bxl-linkedin-square'></i></a>
 					<a href="https://github.com/ntthggr" target="_blank" class="home__social-link"><i class='bx bxl-github'></i></a>
 					<a href="https://vk.com/ntthggr" target="_blank" class="home__social-link"><i class='bx bxl-vk' ></i></a>
 				</div>
-				<a href="#about" class="home__scroll">
+				<a href="#about" class="home__scroll load-hidden">
 					<i class='bx bx-mouse home__scroll-icon'></i>
 					<span class="home__scroll-name">прокрути вниз</span>
 					
 				</a>
 			</div>
 		</section>
-		<section class="about section" id="about">
+		<section class="about load-hidden section" id="about">
 			<span class="section__subtitle">Немного</span>
 			<h2 class="section__title">Обо мне</h2>
 
@@ -588,7 +590,7 @@
 
 
 	 </footer>
-	 <script src="js/scrollreveal.min.js"></script>
+	 <!-- <script src="js/scrollreveal.min.js"></script> -->
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/main.js"></script>
