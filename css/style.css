@@ -61,6 +61,9 @@
 html {
   scroll-behavior: smooth;
 }
+html.sr .load-hidden {
+  visibility: hidden;
+}
 
 body,
 button,
@@ -165,8 +168,8 @@ body.light-theme {
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
 
-.light-theme .testimonial__card{
-	box-shadow: 0px 2px 4px hsla(var(--second-hue), 48%, 8%, 0.1);
+.light-theme .testimonial__card {
+  box-shadow: 0px 2px 4px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
 
 .light-theme::-webkit-scrollbar {
@@ -354,7 +357,7 @@ body.light-theme {
 }
 
 .home__social {
-  bottom: 5rem;
+  bottom: 8rem;
   left: 0;
   display: grid;
   row-gap: 0.5rem;
@@ -386,8 +389,8 @@ body.light-theme {
 
 .home__scroll {
   color: var(--first-color);
-  right: -1.5rem;
-  bottom: 4rem;
+  right: -2rem;
+  bottom: 8rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
@@ -1006,7 +1009,7 @@ body.light-theme {
   }
 
   .nav {
-    height: calc(var(--header-height) + 1rem);
+    height: calc(var(--header-height) - 1rem);
   }
 
   .home__handle {
