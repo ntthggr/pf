@@ -69,8 +69,6 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
   },
 });
 
-/*=============== Scroll section ===============*/
-
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -132,11 +130,13 @@ themeButton.addEventListener("click", () => {
 });
 
 const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
+  distance: "50px",
   duration: 2500,
-  delay: 400,
+  delay: 100,
 });
-sr.reveal(".home__data");
-sr.reveal(".home__handle", { delay: 700 });
-sr.reveal(".home__social, .home__scroll", { delay: 900, origin: "bottom" });
+
+sr.reveal(".home__data", { delay: 600, origin: "top" });
+sr.reveal(".home__handle", { delay: 600 });
+sr.reveal(".home__scroll", { delay: 600, origin: "right" });
+sr.reveal(".home__social", { delay: 600, origin: "left" });
+sr.reveal(".about", { origin: "bottom", viewFactor: 0.3, duration: 1500 });
